@@ -58,7 +58,11 @@ main {
   background-color: orange;
   grid-column: 2;
   grid-row: 4
+}
 
+.main-wrapper {
+  background-color: #EDF2F6;
+  margin: 2rem;
 }
 
 /*ASIDE STYLING*/
