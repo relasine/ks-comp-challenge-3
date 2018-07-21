@@ -2,40 +2,69 @@ body {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
+
+  display: grid;
+  grid-template-columns: 15% 58% 27%;
+  grid-template-rows: 6% 12% 24% 58%;
 }
 
 /*NAVBAR STYLING*/
 
 nav {
+  background-color: #354052;
+  color: #ABB6C8;
 
+  grid-column: 1;
+  grid-row: 1/5;
+}
+
+.nav-wrap-2, .nav-wrap-3, .nav-wrap-4 {
+  display: grid;
+  grid-template-columns: 23% 77%
+}
+
+.nav-cat-label {
+  grid-column: 1/3;
 }
 
 /*TOP SECTION STYLING*/
 
 section {
-
+  background-color: grey;
+  grid-column: 2/4;
+  grid-row: 1;
 }
 
 /*HEADER STYLING */
 
 header {
-
+  background-color: yellow;
+  grid-column: 2/4;
+  grid-row: 2;
 }
 
 /*ARTICLE STYLING*/
 
 article {
+  background-color: skyblue;
+  grid-column: 2/4;
+  grid-row: 3;
 
 }
 
 /*MAIN STYLING*/
 
 main {
+  background-color: orange;
+  grid-column: 2;
+  grid-row: 4
 
 }
 
 /*ASIDE STYLING*/
 
 aside {
-
+  background-color: magenta;
+  grid-column: 3
+  grid-row: 4;
 }
