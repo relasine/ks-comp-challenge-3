@@ -555,6 +555,7 @@ aside {
 }
 
 .single-chart {
+  transform: rotate(180deg);
   width: 33%;
   justify-content: space-around ;
 }
@@ -602,6 +603,9 @@ aside {
   font-family: 'Open Sans', sans-serif;
   font-size: 0.15em;
   text-anchor: middle;
+
+  transform: rotate(180deg);
+
 }
 
 .p-number {
