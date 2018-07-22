@@ -42,28 +42,38 @@ nav {
   margin: auto;
 }
 
+.nav-wrap-2, .nav-wrap-3 {
+  grid-template-rows: repeat(6, 1fr);
+}
+
+.nav-wrap-4 {
+  grid-template-rows: repeat(5, 1fr);
+}
+
 .nav-wrap-2, .nav-wrap-3, .nav-wrap-4 {
   display: grid;
-  grid-template-columns: 25% 75%
 }
 
 .nav-cat-label {
   margin-left: 1.3rem;
 
-  grid-column: 1/3;
 }
 
 .nav-icon, .cat-icon{
   font-size: 1.2rem;
-
-
-  align-self: center;
-  justify-self: center;
+  padding-left: 1.3rem;
+  border-left: #354052 solid 2px;
 }
 
-.nav-icon:hover, .nav-link-label:hover, .nav-name:hover {
+.cat-icon {
+  margin-left: .4rem;
+}
+
+.nav-icon:hover {
+  background: #303D46;
   color: #FFFFFF;
   cursor: pointer;
+  border-left: #27AFFB solid 2px; 
 }
 
 .yellow-icon {
@@ -88,17 +98,98 @@ nav {
 }
 
 .nav-link-label {
+  font-family: 'Open Sans', sans-serif;
   font-size: .8em;
   text-transform: uppercase;
 
+  display: inline-block;
   margin-bottom: .7rem;
   margin-top: .8rem;
+}
 
-  align-self: center;
+.home-link-label {
+  margin-left: .8rem;
+}
+
+.job-icon {
+  padding-left: 1.4rem;
+}
+
+.job-link-label {
+  margin-left: 1.1rem;
+}
+
+.resumes-icon {
+  padding-left: 1.7rem;
+}
+
+.resumes-link-label {
+  margin-left: 1.1rem;
+}
+
+.tasks-icon {
+  padding-left: 1.4rem;
+}
+
+.tasks-link-label {
+  margin-left: 1.1rem;
+}
+
+.calendar-icon {
+  padding-left: 1.6rem;
+}
+
+.calendar-link-label {
+  margin-left: 1.1rem;
+}
+
+.user-icon {
+  padding-left: 1.6rem;
+}
+
+.user-link-label {
+  margin-left: 1.2rem;
+}
+
+.locations-icon {
+  padding-left: 1.6rem;
+}
+
+.locations-link-label {
+  margin-left: 1.2rem;
+}
+
+.workflows-icon {
+  padding-left: 1.4rem;
+}
+
+.workflows-link-label {
+  margin-left: 1rem;
+}
+
+.job-boards-icon {
+  color: #FFFFFF;
+  padding-left: 1.5rem;
+  background: #303D46;
+  border-left: #27AFFB solid 2px; 
+
+}
+
+.job-boards-link-label {
+  margin-left: 1.3rem;
+}
+
+.social-icon {
+  padding-left: 1.6rem;
+}
+
+.social-link-label {
+  margin-left: 1.3rem;
 }
 
 .categories {
   text-transform: none;
+  margin-left: 1.3rem;
 }
 
 /*TOP SECTION STYLING*/
