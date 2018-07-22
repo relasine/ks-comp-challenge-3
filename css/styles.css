@@ -243,7 +243,17 @@ h1 {
 }
 
 .header-right-wrap {
-  align-self: center;
+  margin-top: 1.5rem;
+  margin-right: 1rem;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: end;
+}
+
+.right-wrap-wrap {
+  display: flex;
+  align-items: center;
 }
 
 .dot {
@@ -267,7 +277,7 @@ h1 {
 }
 
 .header-right-icon {
-  font-size: 1em;
+  font-size: .9em;
 
   border: #d5dae3 solid 1.5px;
   border-radius: 35px;
@@ -368,7 +378,7 @@ main {
 .edit-wrapper {
   background: #7A8AA4;
 
-  display: grid;
+  display: flex;
   align-items: center;
 }
 
@@ -417,7 +427,123 @@ main {
 /*ASIDE STYLING*/
 
 aside {
+  padding-right: 2rem;
+  padding-top: 1.5rem;
   background-color: #EDF2F6;
   grid-column: 3
   grid-row: 4;
+}
+
+.facebook, .twitter, .linkedin {
+  margin-bottom: .5rem;
+  margin-top: .5rem;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.facebook:hover, .twitter:hover, .linkedin:hover {
+  transform: scale(1.05);
+  cursor: pointer;
+}
+
+.twitter, .linkedin {
+  margin-top: .8rem;
+}
+
+.facebook-icon, .twitter-icon, .linkedin-icon {
+  background: #496DC1;
+  color: #FFFFFF;
+  font-size: .8rem;
+
+  border-radius: 3px;
+  padding: 1rem;
+  width: 22rem;
+}
+
+.facebook-text, .twitter-text, .linkedin-text {
+  font-family: 'Open Sans', sans-serif;
+  font-size: .8rem;
+  text-align: center;
+  margin: 0 .4rem 0 .4rem;
+
+  display: inline-block;
+}
+
+.twitter-icon {
+  background: #02A7EE;
+}
+
+.linkedin-icon {
+  background: #037FBD;
+}
+
+.aside-wrapper1 {
+
+}
+
+.job-link-icon, .widget-link-icon, .upload-link-icon {
+  color: #909090;
+
+  margin-bottom: .5rem;
+  margin-top: .5rem;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.job-link-text, .widget-link-text, .upload-link-text {
+  font-family: 'Open Sans', sans-serif;
+
+  margin-top: 1rem;
+  margin-bottom: 0;
+  padding-left: .5rem;
+
+  display: inline-block;
+}
+
+.aside-text {
+  color: #909090;
+  font-size: .8rem;
+  
+  margin-top: 0;
+}
+
+.aside-copy-wrapper {
+  display: flex;
+  align-items: center;
+}
+
+.aside-input {
+  font-size: .5rem;
+
+  border: none;
+  width: 100%;
+  padding: .5rem;
+  display: inline-block;
+}
+
+.aside-copy {
+  background: #46B8BB;
+  color: #FFFFFF;
+  font-size: .5rem;
+
+  padding: .5rem;
+  display: inline-block;
+}
+
+.aside-copy:hover {
+  background-color: #909090;
+  color: #FFFFFF;
+  cursor: pointer;
+}
+
+.email-field {
+  background: #FFFFFF;
+  color: #909090;
+  font-size: .8rem;
+
+  padding-left: .5rem;
 }
