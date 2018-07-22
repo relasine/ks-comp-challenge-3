@@ -1,120 +1,127 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <link rel="stylesheet" type="text/css" href="styles.css">
+  <link rel="stylesheet" type="text/css" href="css/normalize.css">
+  <link rel="stylesheet" type="text/css" href="css/styles.css">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.1/css/all.css" integrity="sha384-O8whS3fhG2OnA5Kas0Y9l3cfpmYjapjI0E4theH4iuMD+pLhbf6JI0jIMfYcK3yZ" crossorigin="anonymous">
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700" rel="stylesheet">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Static Comp 3</title>
 </head>
 <body>
   <nav>
     <div class="nav-wrap-1 nav-wrap">
-      <img src="" class="portrait">
-      <p>Kevin Simpson</p>
+      <img src="images/circle-face.png" class="portrait">
+      <p class="nav-name">Kevin Simpson</p>
       <i></i>
     </div>
     <div class="nav-wrap-2 nav-wrap">
       <p class="nav-cat-label">Main</p>
-      <i class="nav-icon"></i><h5 class="nav-link-label">home</h5>
-      <i class="nav-icon"></i><h5 class="nav-link-label">jobs</h5>
-      <i class="nav-icon"></i><h5 class="nav-link-label">resumes</h5>
-      <i class="nav-icon"></i><h5 class="nav-link-label">tasks</h5>
-      <i class="nav-icon"></i><h5 class="nav-link-label">calendar</h5>
+      <i class="fas fa-home nav-icon"></i>
+      <h5 class="nav-link-label">home</h5>
+      <i class="fas fa-suitcase nav-icon"></i>
+      <h5 class="nav-link-label">jobs</h5>
+      <i class="fas fa-file-alt nav-icon"></i>
+      <h5 class="nav-link-label">resumes</h5>
+      <i class="fas fa-tasks nav-icon"></i>
+      <h5 class="nav-link-label">tasks</h5>
+      <i class="fas fa-calendar-alt nav-icon"></i>
+      <h5 class="nav-link-label">calendar</h5>
     </div>
     <div class="nav-wrap-3 nav-wrap">
       <p class="nav-cat-label">Admin</p>
-      <i class="nav-icon"></i><h5 class="nav-link-label">user</h5>
-      <i class="nav-icon"></i><h5 class="nav-link-label">locations</h5>
-      <i class="nav-icon"></i><h5 class="nav-link-label">workflows</h5>
-      <i class="nav-icon"></i><h5 class="nav-link-label">job boards</h5>
-      <i class="nav-icon"></i><h5 class="nav-link-label">social</h5>  
+      <i class="fas fa-user nav-icon"></i>
+      <h5 class="nav-link-label">user</h5>
+      <i class="fas fa-globe-asia nav-icon"></i>
+      <h5 class="nav-link-label">locations</h5>
+      <i class="fas fa-sitemap nav-icon"></i>
+      <h5 class="nav-link-label">workflows</h5>
+      <i class="fas fa-newspaper nav-icon"></i>
+      <h5 class="nav-link-label">job boards</h5>
+      <i class="fas fa-street-view nav-icon"></i>
+      <h5 class="nav-link-label">social</h5>  
     </div>
     <div class="nav-wrap-4 nav-wrap">
       <p class="nav-cat-label">Categories</p>
-      <i class="nav-icon"></i><p class="categories nav-link-label">Administrative</p>
-      <i class="nav-icon"></i><p class="categories nav-link-label">Design</p>
-      <i class="nav-icon"></i><p class="categories nav-link-label">Executive</p>
-      <i class="nav-icon"></i><p class="categories nav-link-label">Human Resources</p> 
+      <i class="fas fa-check-square yellow-icon cat-icon"></i>
+      <p class="categories nav-link-label">Administrative</p>
+      <i class="fas fa-square blue-icon cat-icon"></i><p class="categories nav-link-label">Design</p>
+      <i class="fas fa-square red-icon cat-icon"></i><p class="categories nav-link-label">Executive</p>
+      <i class="fas fa-square green-icon cat-icon"></i><p class="categories nav-link-label">Human Resources</p> 
     </div>
   </nav>
   <section class="top-bar">
-    <div class="top-left-wrap">
-      <i></i>
-      <i></i>
-      <i></i>
+    <div class="arrow-and-lines">
+      <i class="fas fa-caret-left tiny-arrow"><i class="fas fa-align-justify justify-icon"></i></i>
+    </div>
+    <div class="search-wrapper">
+      <i class="fas fa-search magnifying-glass"></i>
       <input type="text" class="top-search" placeholder="Search for a job, task or resume">
     </div>
-    <div clas="top-right-wrap">
-      <i></i>
-      <i></i>
-      <i></i>
+    <div class=top-icon-div>
+      <i class="fas fa-user-plus top-right-icons"></i>
+    </div> 
+    <div class=top-icon-div> 
+      <i class="fas fa-calendar-check top-right-icons"></i>
+    </div>
+    <div class=top-icon-div>  
+      <i class="fas fa-th top-right-icons"></i>
     </div>
   </section>
   <header>
     <div class="main-header-wrap">
       <h1>Customer Service Representative</h1>
-      <i></i>
-      <p class="location">Denver, CO - <span class="preview">Preview this post</span></p>
+      <i class="fas fa-map-marker-alt marker-icon"><p class="location">Denver, CO - <span class="preview">Preview this post</span></p></i>
     </div>
     <div class="header-right-wrap">
-      <p><i></i>OPEN</p>
-      <i></i>
-      <i></i>
-      <i></i>
+      <i class="fas fa-circle dot"><p class="open-text">OPEN</p></i>
+      <i class="fas fa-bookmark header-right-icon"></i>
+      <i class="fas fa-pencil-alt header-right-icon"></i>
+      <i class="fas fa-trash-alt header-right-icon"></i>
     </div>
     <div class="header-nav-wrap">
-      <h5>summary</h5>
-      <h5>applicants</h5>
-      <h5>job board</h5>
-      <h5>interview</h5>
-      <h5>activity</h5>
-      <h5>broadcast</h5>
-      <h5>notifications</h5>
+      <h5 class="header-nav-links summary">summary</h5>
+      <h5 class="header-nav-links">applicants</h5>
+      <h5 class="header-nav-links">job board</h5>
+      <h5 class="header-nav-links">interview</h5>
+      <h5 class="header-nav-links">activity</h5>
+      <h5 class="header-nav-links">broadcast</h5>
+      <h5 class="header-nav-links">notifications</h5>
     </div>
   </header>
   <article>
-    <div class="article-left-wrap">
-      <img src="" class="animated-chart">
-      <img src="" class="animated-chart">
-      <img src="" class="animated-chart">
-      <h5 class="chart-label-1">TOTALS - Out of 5,231 views</h5>
-    </div>
-    <div class="article-right-wrap">
-      <img src="" class="bar-chart">
-      <h5 class="chart-label-2">applicants/day</h5>
-    </div>
+    <img src="images/placeholder-circle.jpg" class="animated-chart">
+    <h5 class="chart-label-1">TOTALS - Out of 5,231 views</h5>
+    <img src="images/bar-chart.jpg" class="bar-chart">
+    <h5 class="chart-label-2">applicants/day</h5>
   </article>
   <main>
     <div class="main-wrapper">
-      <h5 class="main-h5">job description</h5>
-      <div class="edit-btn">
-        <i></i><h5>edit</h5>
+      <div class="job-wrapper">
+        <h5 class="main-h5 main-header-h5">job description</h5>
       </div>
-      <hr>
-      <h5 class="main-h5 main-header-h5">position title</h5>
+      <div class="edit-wrapper">
+        <i class="fas fa-pencil-alt edit-icon"><h5 class="edit-text">edit</h5></i>
+      </div>
+      <h5 class="main-h5">position title</h5>
       <p class="main-p">Customer Service Representative</p>
-      <hr>
       <h5 class="main-h5">location</h5>
       <p class="main-p">Denver, CO</p>
-      <hr>
       <h5 class="main-h5">employment type</h5>
       <p class="main-p">Full-time</p>
-      <hr>
       <h5 class="main-h5">experience</h5>
       <p class="main-p">Mid-level</p>
-      <hr>
       <h5 class="main-h5">status</h5>
       <p class="main-p">Open</p>
-      <hr>
       <h5 class="main-h5">description</h5>
       <p class="main-p">The Customer Service Representative is responsible for interacting with and providing quality assistance to all radical customers, responsible for keeping up-to-date on the various product shizzle; helping the bidness reduce customer service wait times while doing a backhand spring and eating a hand sandwich.</p>
-      <hr>
       <h5 class="main-h5">hiring lead</h5>
-      <img src="" class="hiring-lead-avatar">
-      <p class="main-p">Steven Will</p>
-      <hr>
+      <div class="hiring-lead-wrapper">
+        <img src="images/circle-face.png" class="hiring-lead-avatar">
+        <p class="main-p hiring-lead-name">Steven Will</p>
+      </div>
       <h5 class="main-h5">approved salary</h5>
       <p class="main-p">$58,000</p>
-      <hr>
     </div>
   </main>
   <aside>
