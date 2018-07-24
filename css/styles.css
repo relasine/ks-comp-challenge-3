@@ -6,8 +6,7 @@ body {
   padding: 0;
 
   display: grid;
-  grid-template-columns: 15% 58% 27%;
-  grid-template-rows: 6% 12% 24% 58%;
+  grid-template-columns: 220px 1fr 400px;
 }
 
 i {
@@ -24,6 +23,8 @@ nav {
 }
 
 .portrait {
+  border-radius: 45px;
+
   display: block;
   margin: 2rem auto;
   width: 6em;
@@ -31,7 +32,7 @@ nav {
 
 .portrait:hover {
   cursor: pointer;
-  filter: brightness(110%);
+  filter: brightness(110%); 
 }
 
 .nav-name {
@@ -40,14 +41,7 @@ nav {
 
 .nav-wrap-1 {
   margin: auto;
-}
-
-.nav-wrap-2, .nav-wrap-3 {
-  grid-template-rows: repeat(6, 1fr);
-}
-
-.nav-wrap-4 {
-  grid-template-rows: repeat(5, 1fr);
+  border-bottom: #30394A solid 2px;
 }
 
 .nav-wrap-2, .nav-wrap-3, .nav-wrap-4 {
@@ -55,8 +49,13 @@ nav {
 }
 
 .nav-cat-label {
-  margin-left: 1.3rem;
+  padding-left: 1.8rem;
+  margin-top: 2rem;
+}
 
+.admin-label, .category-label {
+  border-top: #30394A solid 2px;
+  padding-top: 2em;
 }
 
 .nav-icon, .cat-icon{
@@ -70,18 +69,12 @@ nav {
 }
 
 .nav-icon:hover {
-  background: #303D46;
   color: #FFFFFF;
   cursor: pointer;
-  border-left: #27AFFB solid 2px; 
 }
 
 .yellow-icon {
   color: #FCD90D;
-}
-
-.blue-icon {
-  
 }
 
 .red-icon {
@@ -97,99 +90,53 @@ nav {
   filter: brightness(170%);
 }
 
+.nav-icon {
+  align-self: center;
+  margin: auto;
+  display: block;
+}
+
 .nav-link-label {
   font-family: 'Open Sans', sans-serif;
   font-size: .8em;
   text-transform: uppercase;
-
-  display: inline-block;
-  margin-bottom: .7rem;
-  margin-top: .8rem;
+  margin-left: .5rem;
 }
 
-.home-link-label {
-  margin-left: .8rem;
+.nav-combo-wrap {
+  display: grid;
+  grid-template-columns: 1fr 3fr;
+  border-left: 2px solid #354052;
 }
 
-.job-icon {
-  padding-left: 1.4rem;
-}
-
-.job-link-label {
-  margin-left: 1.1rem;
-}
-
-.resumes-icon {
-  padding-left: 1.7rem;
-}
-
-.resumes-link-label {
-  margin-left: 1.1rem;
-}
-
-.tasks-icon {
-  padding-left: 1.4rem;
-}
-
-.tasks-link-label {
-  margin-left: 1.1rem;
-}
-
-.calendar-icon {
-  padding-left: 1.6rem;
-}
-
-.calendar-link-label {
-  margin-left: 1.1rem;
-}
-
-.user-icon {
-  padding-left: 1.6rem;
-}
-
-.user-link-label {
-  margin-left: 1.2rem;
-}
-
-.locations-icon {
-  padding-left: 1.6rem;
-}
-
-.locations-link-label {
-  margin-left: 1.2rem;
-}
-
-.workflows-icon {
-  padding-left: 1.4rem;
-}
-
-.workflows-link-label {
-  margin-left: 1rem;
-}
-
-.job-boards-icon {
+.nav-combo-wrap:hover .nav-icon, .nav-combo-wrap:hover .nav-link-label {
   color: #FFFFFF;
-  padding-left: 1.5rem;
-  background: #303D46;
+  cursor: pointer;
+}
+
+.nav-combo-wrap:hover {
+  background: #30394A;
   border-left: #27AFFB solid 2px; 
+  cursor: pointer;
+} 
 
-}
-
-.job-boards-link-label {
-  margin-left: 1.3rem;
-}
-
-.social-icon {
-  padding-left: 1.6rem;
-}
-
-.social-link-label {
-  margin-left: 1.3rem;
+.jobs-board-wrap {
+  background: #30394A;
+  color: #FFFFFF;
+  cursor: pointer;
+  border-left: #27AFFB solid 2px; 
 }
 
 .categories {
   text-transform: none;
-  margin-left: 1.3rem;
+  margin-left: .5rem;
+}
+
+.cat-combo-wrap {
+  display: grid;
+  grid-template-columns: 1fr 3fr;
+
+  align-items: center;
 }
 
 /*TOP SECTION STYLING*/
@@ -199,7 +146,7 @@ section {
   grid-row: 1;
 
   display: grid;
-  grid-template-columns: 6% 76% 6% 6% 6%;
+  grid-template-columns: 3.75rem 1fr 3.75rem 3.75rem 3.75rem;
 }
 
 .arrow-and-lines {
@@ -253,7 +200,7 @@ section {
 }
 
 .arrow-and-lines:hover, .arrow-and-lines:hover .justify-icon, .top-icon-div:hover, .top-icon-div:hover .top-right-icons {
-  background-color: #909090;
+  background-color: #27AFFB;
   color: #FFFFFF;
   cursor: pointer;
 }
@@ -268,7 +215,7 @@ header {
   grid-row: 2;
 
   display: grid;
-  grid-template-columns: 3fr 1fr;
+  grid-template-columns: 1fr 250px;
   grid-template-rows: 60% 40%;
 }
 
@@ -339,7 +286,7 @@ h1 {
   display: flex;
   flex-direction: row;
   flex-wrap: nowrap;
-  justify-content: end;
+  align-items: bottom;
 }
 
 .right-wrap-wrap {
@@ -377,9 +324,11 @@ h1 {
   padding: .6rem;
 }
 
-.header-right-icon:hover, .dot:hover {
+.header-right-icon:hover, .dot:hover, .dot:hover .open-text {
   cursor: pointer;
-  transform: scale(1.2);
+  color: #FFFFFF;
+  background-color: #909090;
+  border-color: #909090;
 }
 
 /*ARTICLE STYLING*/
@@ -397,9 +346,9 @@ article {
 .animated-chart {
   display: block;
   margin: auto;
-  margin-top: 2rem;
-  width: 90%;
+  width: 95%;
 
+  align-self: center;
   grid-column: 1;
 }
 
@@ -418,10 +367,10 @@ article {
 
 .bar-chart {
   display: block;
-  margin: auto;
-  margin-top: 2rem;
+  margin: 1rem auto;
   width: 90%;
 
+  align-self: center;
   grid-column: 2;
 }
 
@@ -442,7 +391,7 @@ main {
 
 .main-wrapper {
   background-color: #FFFFFF;
-  margin: 2rem;
+  margin: 0 2rem;
 
   display: grid;
   grid-template-columns: 2fr 5fr;
@@ -453,13 +402,19 @@ main {
 }
 
 .main-h5 {
-  margin-left: 1rem;
+  margin: 1.5rem 1rem;
   text-transform: uppercase;
 }
 
 .main-p {
   padding-right: 1rem;
   align-self: center;
+  margin-bottom: 1rem;
+  margin-top: 1rem;
+}
+
+.position-h5 {
+  margin-top: 2rem;
 }
 
 .main-header-h5 {
@@ -515,6 +470,12 @@ main {
   text-decoration: underline;
 }
 
+.main-break {
+  grid-column: 1/3;
+  color: #909090;
+  width: 95%;
+}
+
 /*ASIDE STYLING*/
 
 aside {
@@ -535,7 +496,7 @@ aside {
 }
 
 .facebook:hover, .twitter:hover, .linkedin:hover {
-  transform: scale(1.05);
+  filter: brightness(115%);
   cursor: pointer;
 }
 
@@ -556,22 +517,24 @@ aside {
 .facebook-text, .twitter-text, .linkedin-text {
   font-family: 'Open Sans', sans-serif;
   font-size: .8rem;
-  text-align: center;
-  margin: 0 .4rem 0 .4rem;
+  margin: 0 .4rem 0 100px;
 
   display: inline-block;
 }
 
+.twitter-text {
+  margin-left: 104px;
+}
+
+.linkedin-text {
+  margin-left: 99px;
+}
 .twitter-icon {
   background: #02A7EE;
 }
 
 .linkedin-icon {
   background: #037FBD;
-}
-
-.aside-wrapper1 {
-
 }
 
 .job-link-icon, .widget-link-icon, .upload-link-icon {
@@ -594,6 +557,7 @@ aside {
 
   display: inline-block;
 }
+
 
 .aside-text {
   color: #909090;
@@ -636,8 +600,13 @@ aside {
   color: #909090;
   font-size: .8rem;
 
+  margin-top: 9px;
+  margin-bottom 9px;
   padding-left: .5rem;
+  width: 22rem;
 }
+
+
 
 /*CIRCLE GRAPHS*/
 .flex-wrapper {
