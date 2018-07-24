@@ -9,35 +9,77 @@
   <title>Static Comp 3</title>
 </head>
 <body>
-  <nav>
+  <nav class='side-nav'>
     <div class="nav-wrap-1 nav-wrap">
-      <img src="images/circle-face.png" class="portrait">
+      <img src="images/kevinandhenry.jpg" class="portrait">
       <p class="nav-name">Kevin Simpson</p>
       <i></i>
     </div>
     <div class="nav-wrap-2 nav-wrap">
       <p class="nav-cat-label">Main</p>
-      <i class="fas fa-home nav-icon home-icon"><h5 class="nav-link-label home-link-label">home</h5></i>
-      <i class="fas fa-suitcase nav-icon job-icon"><h5 class="nav-link-label job-link-label">jobs</h5></i>
-      <i class="fas fa-file-alt nav-icon resumes-icon"><h5 class="nav-link-label resumes-link-label">resumes</h5></i>
-      <i class="fas fa-tasks nav-icon tasks-icon"><h5 class="nav-link-label tasks-link-label">tasks</h5></i>
-      <i class="fas fa-calendar-alt nav-icon calendar-icon"><h5 class="nav-link-label calendar-link-label">calendar</h5></i>
+      <div class="nav-combo-wrap">
+        <i class="fas fa-home nav-icon home-icon"></i>
+        <h5 class="nav-link-label home-link-label">home</h5>
+      </div>
+      <div class="nav-combo-wrap">
+        <i class="fas fa-suitcase nav-icon job-icon"></i>
+        <h5 class="nav-link-label job-link-label">jobs</h5>
+      </div>
+      <div class="nav-combo-wrap">
+        <i class="fas fa-file-alt nav-icon resumes-icon"></i>
+        <h5 class="nav-link-label resumes-link-label">resumes</h5>
+      </div>
+      <div class="nav-combo-wrap">
+        <i class="fas fa-tasks nav-icon tasks-icon"></i>
+        <h5 class="nav-link-label tasks-link-label">tasks</h5>
+      </div>
+      <div class="nav-combo-wrap calendar-combo">
+        <i class="fas fa-calendar-alt nav-icon calendar-icon"></i>
+        <h5 class="nav-link-label calendar-link-label">calendar</h5>
+      </div>  
     </div>
     <div class="nav-wrap-3 nav-wrap">
-      <p class="nav-cat-label">Admin</p>
-      <i class="fas fa-user nav-icon user-icon"><h5 class="nav-link-label user-link-label">user</h5></i> 
-      <i class="fas fa-globe-asia nav-icon locations-icon"><h5 class="nav-link-label locations-link-label">locations</h5></i>
-      <i class="fas fa-sitemap nav-icon workflows-icon"><h5 class="nav-link-label workflows-link-label">workflows</h5></i>
-      <i class="fas fa-newspaper nav-icon job-boards-icon"><h5 class="nav-link-label job-boards-link-label">job boards</h5></i>
-      <i class="fas fa-street-view nav-icon social-icon"><h5 class="nav-link-label social-link-label">social</h5> </i>
-       
+      <p class="nav-cat-label admin-label">Admin</p>
+      <div class="nav-combo-wrap">
+        <i class="fas fa-user nav-icon user-icon"></i>
+        <h5 class="nav-link-label user-link-label">user</h5>
+      </div>
+      <div class="nav-combo-wrap">
+        <i class="fas fa-globe-asia nav-icon locations-icon"></i>
+        <h5 class="nav-link-label locations-link-label">locations</h5>
+      </div>
+      <div class="nav-combo-wrap">
+        <i class="fas fa-sitemap nav-icon workflows-icon"></i>
+        <h5 class="nav-link-label workflows-link-label">workflows</h5>
+      </div>
+      <div class="nav-combo-wrap jobs-board-wrap">
+        <i class="fas fa-newspaper nav-icon job-boards-icon"></i>
+        <h5 class="nav-link-label job-boards-link-label">job boards</h5>
+      </div>
+      <div class="nav-combo-wrap social-combo">
+        <i class="fas fa-street-view nav-icon social-icon"></i>
+        <h5 class="nav-link-label social-link-label">social</h5>
+      </div>
+
     </div>
     <div class="nav-wrap-4 nav-wrap">
-      <p class="nav-cat-label">Categories</p>
-      <i class="fas fa-check-square yellow-icon cat-icon"><p class="categories nav-link-label">Administrative</p></i>
-      <i class="fas fa-square blue-icon cat-icon"><p class="categories nav-link-label">Design</p></i>
-      <i class="fas fa-square red-icon cat-icon"><p class="categories nav-link-label">Executive</p></i>
-      <i class="fas fa-square green-icon cat-icon"><p class="categories nav-link-label">Human Resources</p> </i>
+      <p class="nav-cat-label category-label">Categories</p>
+      <div class="cat-combo-wrap">
+        <i class="fas fa-check-square yellow-icon cat-icon"></i>
+        <p class="categories nav-link-label">Administrative</p>
+      </div>
+      <div class="cat-combo-wrap">
+        <i class="fas fa-square blue-icon cat-icon"></i>
+        <p class="categories nav-link-label">Design</p>
+      </div>
+      <div class="cat-combo-wrap">
+        <i class="fas fa-square red-icon cat-icon"></i>
+        <p class="categories nav-link-label">Executive</p>
+      </div>
+      <div class="cat-combo-wrap">
+        <i class="fas fa-square green-icon cat-icon"></i>
+        <p class="categories nav-link-label">Human Resources</p>
+      </div>
     </div>
   </nav>
   <section class="top-bar">
@@ -68,13 +110,13 @@
         <i class="fas fa-circle dot"><p class="open-text">OPEN</p></i>
       </div>
       <div class="right-wrap-wrap">
-      <i class="fas fa-bookmark header-right-icon"></i>
+      <i class="fas fa-bookmark bookmark-icon header-right-icon"></i>
       </div>
       <div class="right-wrap-wrap">
       <i class="fas fa-pencil-alt header-right-icon"></i>
       </div>
       <div class="right-wrap-wrap">
-      <i class="fas fa-trash-alt header-right-icon"></i>
+      <i class="fas fa-trash-alt trash-icon header-right-icon"></i>
       </div>
     </div>
     <div class="header-nav-wrap">
@@ -90,13 +132,13 @@
   <article>
     <div class="flex-wrapper animated-chart">
       <div class="single-chart">
-        <svg viewbox="0 0 36 36" class="circular-chart orange">
+        <svg viewbox="0 0 36 36" class="circular-chart blue">
           <path class="circle-bg"
             d="M18 2.0845
               a 15.9155 15.9155 0 0 1 0 31.831
               a 15.9155 15.9155 0 0 1 0 -31.831"/>
           <path class="circle"
-            stroke-dasharray="30, 100"
+            stroke-dasharray="90, 100"
             d="M18 2.0845
               a 15.9155 15.9155 0 0 1 0 31.831
               a 15.9155 15.9155 0 0 1 0 -31.831"/>
@@ -119,25 +161,24 @@
           <text x="-18" y="-12" class="percentage">INTERVIEWS</text>
         </svg>
       </div>
-
       <div class="single-chart">
-        <svg viewbox="0 0 36 36" class="circular-chart blue">
+        <svg viewbox="0 0 36 36" class="circular-chart orange">
           <path class="circle-bg"
             d="M18 2.0845
               a 15.9155 15.9155 0 0 1 0 31.831
               a 15.9155 15.9155 0 0 1 0 -31.831"/>
           <path class="circle"
-            stroke-dasharray="90, 100"
+            stroke-dasharray="30, 100"
             d="M18 2.0845
               a 15.9155 15.9155 0 0 1 0 31.831
               a 15.9155 15.9155 0 0 1 0 -31.831"/>
-          <text x="-18" y="-17" class="percentage p-number">612</text>
+          <text x="-18" y="-17" class="percentage p-number">912</text>
           <text x="-18" y="-12" class="percentage">FORWARDS</text>
         </svg>
       </div>
     </div>
     <h5 class="chart-label-1">TOTALS - Out of 5,231 views</h5>
-    <img src="images/bar-chart.jpg" class="bar-chart">
+    <img src="images/lolezmode.png" class="bar-chart">
     <h5 class="chart-label-2">applicants/day</h5>
   </article>
   <main>
@@ -148,23 +189,30 @@
       <div class="edit-wrapper">
         <i class="fas fa-pencil-alt edit-icon"><h5 class="edit-text">edit</h5></i>
       </div>
-      <h5 class="main-h5">position title</h5>
+      <h5 class="main-h5 position-h5">position title</h5>
       <p class="main-p">Customer Service Representative</p>
+      <hr class="main-break">
       <h5 class="main-h5">location</h5>
       <p class="main-p">Denver, CO</p>
+      <hr class="main-break">
       <h5 class="main-h5">employment type</h5>
       <p class="main-p">Full-time</p>
+      <hr class="main-break">
       <h5 class="main-h5">experience</h5>
       <p class="main-p">Mid-level</p>
+      <hr class="main-break">
       <h5 class="main-h5">status</h5>
       <p class="main-p">Open</p>
+      <hr class="main-break">
       <h5 class="main-h5">description</h5>
       <p class="main-p">The Customer Service Representative is responsible for interacting with and providing quality assistance to all radical customers, responsible for keeping up-to-date on the various product shizzle; helping the bidness reduce customer service wait times while doing a backhand spring and eating a hand sandwich.</p>
+      <hr class="main-break">
       <h5 class="main-h5">hiring lead</h5>
       <div class="hiring-lead-wrapper">
         <img src="images/circle-face.png" class="hiring-lead-avatar">
         <p class="main-p hiring-lead-name">Steven Will</p>
       </div>
+      <hr class="main-break">
       <h5 class="main-h5">approved salary</h5>
       <p class="main-p">$58,000</p>
     </div>
@@ -186,7 +234,7 @@
       
       <p class="aside-text">Lorem ipsum dolor sit amet, consecletur adipis cing elit, integer molis neque eget vestibpend</p>
       <div class="aside-copy-wrapper">
-        <p class="aside-input">http://www.jobposting.com/newhires/2018/July</p>
+        <input type="text" class="aside-input" placeholder="<http://www.jobposting.com/newhires/2018/July" disabled>
         <p class="aside-copy">Copy</p>
       </div>
       <hr>
@@ -195,7 +243,7 @@
       <i class="fas fa-drafting-compass widget-link-icon"><h4 class="widget-link-text">Use the Button Widget</h4></i>
       <p class="aside-text">This widget embeds the buttons for sharing jobs for submitting a resume on your website.</p>
       <div class="aside-copy-wrapper">
-        <input type="text" class="aside-input" placeholder="<script type="text/javascript" s....>
+        <input type="text" class="aside-input" placeholder="<script type=text/javascript s.... " disabled>
         <p class="aside-copy">Copy</p>
       </div>
       <hr>
@@ -203,8 +251,9 @@
       <div class="aside-wrapper3">
       <i class="fas fa-paper-plane upload-link-icon"><h4 class="upload-link-text">Upload Resumes by Email</h4></i>
       <p class="aside-text">You can automatically upload multiple resumes to this job by emailing the address below.</p>
-      <p class="email-field">relasine@gmail.com</p>
+      <input type="text" class="email-field aside-input" placeholder="relasine@gmail.com" disabled>
     </div>
   </aside>
+  <script src="javascript.js"></script>
 </body>
 </html>
