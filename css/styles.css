@@ -4,9 +4,7 @@ body {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
-}
 
-.body-grid-wrapper {
   display: grid;
   grid-template-columns: 220px 1fr;
 }
@@ -254,6 +252,16 @@ h1 {
 
 .hidden-hamburger-wrapper {
   display: none;
+}
+
+.hidden-hamburger-wrapper:hover, .hidden-hamburger-wrapper:hover .hidden-header-hamburger {
+  background-color: #27AFFB;
+  color: #FFFFFF;
+  cursor: pointer;
+}
+
+.tiny-arrow {
+  padding-left: .2rem;
 }
 
 .marker-icon {
@@ -750,8 +758,7 @@ aside {
   }
 
   .email-field {
-/*    width: 384px;
-*/    padding-right: 0px;
+    padding-right: 0px;
   }
   .header-nav-links {
     font-size: .6rem;
@@ -774,10 +781,6 @@ aside {
 
     justify-content: center;
   }
-}
-
-@media (max-width: 1030px) {
-
 }
 
 @media (max-width: 950px) {
@@ -866,10 +869,79 @@ aside {
     margin-top: 0;
     margin-bottom: 0;
   }
-}
+  .main-header-wrap {
+    grid-column: 1/3
+  }
 
-  /*article {
-    display: flex;
-    flex-direction: column;
+/*  h1 {
+    font-size: 1rem;
+  }
+
+  .location {
+    font-size: .7rem;
   }*/
 
+  .hidden-hamburger-wrapper {
+    display: inline;
+    padding: .7rem;
+    padding-left: .7rem;
+    padding-right: 0;
+  }
+
+  .summary {
+    margin-left: 1rem;
+    margin-top: 2rem;
+  }
+
+  .nav-links-mq-hide {
+    display: none;
+  }
+
+  .header-nav-wrap {
+  grid-column: 1;
+  grid-row: 2;
+  }
+  .header-right-wrap {
+  grid-row: 2;
+  margin-top: 0;
+  align-items: center;
+  }
+}
+
+/*@media (max-width: 660px) {
+  header {
+    grid-template-rows: repeat (3, 1fr);
+  }
+  .header-right-wrap {
+    justify-content: start;
+    grid-column: 2;
+    margin-left: 2rem;
+    margin-top: .5rem;
+    margin-bottom: 1rem;
+  }
+  .header-nav-wrap {
+    grid-column: 1;
+    grid-row: 2;
+    display: flex;
+    align-content: end;
+  }
+
+  .main-header-wrap {
+    grid-column: 1/3;
+  }
+
+  .header-right-wrap, .header-nav-wrap {
+    height: 40px;
+  }
+  .header-nav-links {
+    padding-top: .5rem;
+    padding-bottom: 1.3rem;
+  }
+
+  .hidden-hamburger-wrapper {
+    margin-top: 1.5rem;
+    padding-top: .5rem;
+    padding-bottom: .5rem;
+  }
+
+}*/
