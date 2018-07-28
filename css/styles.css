@@ -194,7 +194,7 @@ nav {
 
 /*TOP SECTION STYLING*/
 
-section {
+.top-bar {
   height: 52px;
   border-bottom: solid #F0F0F0 1px;
 
