@@ -14,7 +14,6 @@ body {
 main {
   display: grid;
   grid-template-columns: 1fr 440px;
-  width: 100%;
 }
 
 i {
@@ -57,6 +56,26 @@ nav {
   display: grid;
 }
 
+.nav-wrap-4-hidden {
+  font-size: .8em;
+
+  margin-top: 2em;
+  margin-right: .7em;
+  display: none;
+}
+
+.hidden-admin {
+  color: #FCD90D;
+}
+
+.hidden-nav-link-label {
+  margin-bottom: 2em;
+}
+
+.hidden-nav-link-label:hover {
+  cursor: pointer;
+}
+
 .hidden-link-label {
   display: none;
 }
@@ -83,7 +102,8 @@ nav {
   margin-left: .4rem;
 }
 
-.nav-icon:hover {
+.nav-icon:hover,
+.hidden-off-categories:hover {
   color: #FFFFFF;
   cursor: pointer;
 }
@@ -894,8 +914,17 @@ aside {
     text-align: center;
   }
 
+  .nav-wrap-3 {
+    padding-bottom: 2em;
+    border-bottom: #30394A solid 2px;
+  }
+
   .nav-wrap-4 {
     display: none;
+  }
+  
+  .nav-wrap-4-hidden {
+    display: block;
   }
 }
 
@@ -1015,7 +1044,7 @@ aside {
     grid-column: 1;
     grid-row: 2;
     display: flex;
-    align-content: end;
+    align-content: flex-end;
   }
 
   .main-header-wrap {
@@ -1059,8 +1088,45 @@ aside {
 }
 
 @media (max-width: 560px) {
+  body {
+    grid-template-columns: 1fr;
+  }
+
   main {
-    grid-column: 1/3;
+    display: block;
+  }
+
+  header {
+    display: block;  
+  }
+
+  h1 {
+    font-size: 1.4em;
+  }
+
+  .chart-label-1,
+  .chart-label-2 {
+    font-size: .5em;
+  }
+
+  .header-right-wrap {
+    margin-bottom: 0;
+    margin-right: 0;
+    padding-right: 0;
+    justify-content: center;
+  }
+
+  .header-nav-links {
+    margin-top: 1em;
+  }
+
+  .hidden-hamburger-wrapper {
+    margin-top: .5em;
+  }
+
+  .main-wrapper {
+    font-size: .8em;
+    grid-template-columns: 120px 1fr;
   }
 
   nav {
@@ -1068,12 +1134,32 @@ aside {
   }
 }
 
-@media (max-width: 450) {
-  .bar-chart {
-    width: 300px;
+@media (max-width: 450px) {
+  h1 {
+    font-size: 1.05em;
+  }
+  aside {
+    padding: 0;
+  }
+  .main-wrapper {
+    margin-left: 1em;
+    margin-right: 1em;
+  }
+}
+
+@media (max-width: 400px) {
+  .animated-chart {
+    width: 320px;
   }
 
   .flex-wrapper {
-  flex-direction: column;
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+  align-items: center;
+  }
+
+  .circular-chart {
+
   }
 }
