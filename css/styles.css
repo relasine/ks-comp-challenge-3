@@ -1,6 +1,7 @@
 * {
   box-sizing: border-box;
 }
+
 body {
   font-family: 'Open Sans', sans-serif;
   margin: 0;
@@ -61,10 +62,6 @@ nav {
 
 .hidden-nav-link-label {
   margin-bottom: 2em;
-}
-
-.hidden-nav-link-label:hover {
-  cursor: pointer;
 }
 
 .hidden-link-label {
@@ -154,6 +151,10 @@ nav {
   grid-template-columns: 1fr 3fr;
 
   align-items: center;
+}
+
+.hidden-nav-link-label:hover {
+  cursor: pointer;
 }
 
 .portrait:hover {
@@ -289,7 +290,6 @@ h1 {
 
 .location {
   font-family: 'Open Sans', sans-serif;
-
   display: inline-block;
   margin-top: 0;
   padding-left: .3rem;
@@ -314,7 +314,6 @@ h1 {
 
 .main-header-wrap {
   margin-left: 2rem;
-
   grid-column: 1;
   grid-row: 1;
 }
@@ -336,10 +335,8 @@ h1 {
 .dot {
   color: #228B22;
   font-size: .7em;
-
   border: #d5dae3 solid 1.5px;
   border-radius: 20px;
-
   padding-left: .5rem;
   padding-right: .5rem;
 }
@@ -348,17 +345,14 @@ h1 {
   color: #909090;
   font-family: 'Open Sans', sans-serif;
   font-weight: 700;
-
   display: inline-block;
   padding-left: .5rem;
 }
 
 .header-right-icon {
   font-size: .9em;
-
   border: #d5dae3 solid 1.5px;
   border-radius: 35px;
-
   margin-left: 1rem;
   padding: .6rem;
 }
@@ -394,7 +388,6 @@ h1 {
 
 .charts {
   grid-column: 1/3;
-
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-template-rows: 80% 20%;
@@ -404,7 +397,6 @@ h1 {
   display: block;
   margin: auto;
   width: 95%;
-
   align-self: center;
   grid-column: 1;
 }
@@ -418,7 +410,6 @@ h1 {
   border-radius: 35px;
   margin: 1rem auto 1rem auto; 
   padding: .5rem; 
-
   grid-row: 2;
 }
 
@@ -513,7 +504,6 @@ h1 {
 .edit-text {
   font-family: 'Open Sans', sans-serif;
   text-transform: uppercase;
-
   display: inline-block;
   margin: 0 .4rem 0 .4rem;
 }
@@ -563,7 +553,6 @@ aside {
 .linkedin {
   margin-bottom: .5rem;
   margin-top: .5rem;
-
   display: flex;
   align-items: center;
   justify-content: center;
@@ -584,7 +573,6 @@ aside {
   background: #496DC1;
   color: #FFFFFF;
   font-size: .8rem;
-
   box-sizing: content-box;
   border-radius: 3px;
   padding: 1rem;
@@ -597,7 +585,6 @@ aside {
   font-family: 'Open Sans', sans-serif;
   font-size: .8rem;
   margin: 0 .4rem 0 100px;
-
   display: inline-block;
 }
 
@@ -622,10 +609,8 @@ aside {
 .widget-link-icon, 
 .upload-link-icon {
   color: #909090;
-
   margin-bottom: .5rem;
   margin-top: .5rem;
-
   display: flex;
   align-items: center;
   justify-content: center;
@@ -635,11 +620,9 @@ aside {
 .widget-link-text, 
 .upload-link-text {
   font-family: 'Open Sans', sans-serif;
-
   margin-top: 1rem;
   margin-bottom: 0;
   padding-left: .5rem;
-
   display: inline-block;
 }
 
@@ -647,7 +630,6 @@ aside {
 .aside-text {
   color: #909090;
   font-size: .8rem;
-  
   margin-top: 0;
 }
 
@@ -659,7 +641,6 @@ aside {
 .aside-input {
   background-color: #FFFFFF;
   font-size: .5rem;
-
   border: none;
   width: 100%;
   padding: .5rem;
@@ -670,7 +651,6 @@ aside {
   background: #46B8BB;
   color: #FFFFFF;
   font-size: .5rem;
-
   padding: .5rem;
   display: inline-block;
 }
@@ -679,7 +659,6 @@ aside {
   background: #FFFFFF;
   color: #909090;
   font-size: .8rem;
-
   margin-top: 9px;
   margin-bottom: 9px;
   padding-left: .5rem;
@@ -753,7 +732,6 @@ aside {
   font-family: 'Open Sans', sans-serif;
   font-size: 0.15em;
   text-anchor: middle;
-
   transform: rotate(180deg);
 }
 
@@ -764,8 +742,8 @@ aside {
 @media (max-width: 1200px) {
 
   .job-description {
-  grid-column: 1/3;
-  padding-bottom: 0;
+    grid-column: 1/3;
+    padding-bottom: 0;
   }
   
   aside {
@@ -834,7 +812,6 @@ aside {
 
   .social-wrapper {
     display: flex;
-
     align-items: start;
     justify-content: center;
   }
@@ -1091,6 +1068,7 @@ aside {
   nav {
     display: none;
   }
+
   .top-search {
     width: 50%;
   }
@@ -1100,9 +1078,11 @@ aside {
   h1 {
     font-size: 1.05em;
   }
+
   aside {
     padding: 0;
   }
+  
   .main-wrapper {
     margin-left: 1em;
     margin-right: 1em;
@@ -1115,9 +1095,9 @@ aside {
   }
 
   .flex-wrapper {
-  display: flex;
-  flex-flow: column nowrap;
-  justify-content: center;
-  align-items: center;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
   }
 }
